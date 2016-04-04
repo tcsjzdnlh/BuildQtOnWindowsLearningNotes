@@ -1,0 +1,112 @@
+Build Qt in Minimal 
+OPENSSL_LIBS="-L(path for openssl) 
+-lssl 
+-lcrypto
+" ./configure -release
+-opensource 
+-prefix (path for prefix) 
+-extprefix (path for prefix) 
+-shared
+-largefile 
+-I (path for jpeg) 
+-L (path for jpeg) 
+-sysroot (path for sysroot)
+-xplatform linux-arm_v5t_le-g++ 
+-confirm-license 
+-system-zlib 
+-system-libpng
+-system-libjpeg 
+-openssl-linked 
+-no-accessibility 
+-no-freetype 
+-no-harfbuzz
+-no-glib 
+-no-gui 
+-no-widgets 
+-no-cups 
+-no-iconv 
+-no-evdev 
+-no-icu
+-no-fontconfig 
+-no-pch 
+-no-dbus 
+-no-xcb 
+-no-directfb 
+-no-linuxfb 
+-no-kms
+-no-opengl 
+-nomake examples 
+-nomake tests 
+-skip qtdeclarative 
+-skip qtdoc
+-skip qtgraphicaleffects 
+-skip qtlocation 
+-skip qtquick1 
+-skip qtquickcontrols 
+-skip qtscript 
+-skip qttranslations 
+-skip qtwebkit 
+-skip qtwebkit -examples 
+-skip qtx11extras 
+-skip qtxmlpatterns
+-no-feature-TEXTHTMLPARSER 
+-no-feature-TEXTODFWRITER 
+-no-feature-CSSPARSER
+-no-feature-CONCURRENT 
+-no-feature-DRAGANDDROP 
+-no-feature-SESSIONMANAGER
+-no-feature-SHORTCUT 
+-no-feature-ACTION 
+-no-feature-DOM
+-no-feature-FILESYSTEMMODEL 
+-no-feature-FILESYSTEMWATCHER
+-no-feature-ITEMVIEWS 
+-no-feature-DIRMODEL 
+-no-feature-STANDARDITEMMODEL
+-no-feature-PROXYMODEL 
+-no-feature-SORTFILTERPROXYMODEL
+-no-feature-IDENTITYPROXYMODEL 
+-no-feature-STRINGLISTMODEL
+-no-feature-LISTVIEW 
+-no-feature-TABLEVIEW 
+-no-feature-TREEVIEW
+-no-feature-DATAWIDGETMAPPER 
+-no-feature-COLUMNVIEW 
+-no-feature-MOVIE
+-no-feature-IMAGEFORMAT_PPM 
+-no-feature-IMAGEFORMAT_XBM
+-no-feature-IMAGEFORMAT_XPM 
+-no-feature-FREETYPE 
+-no-feature-BIG_CODECS
+-no-feature-ICONV 
+-no-feature-FTP 
+-no-feature-ACCESSIBILITY
+-no-feature-ANIMATION 
+-no-feature-STATEMACHINE 
+-no-feature-GESTURES
+-no-feature-DBUS 
+-no-feature-XMLSCHEMA -verbose
+
+It went down to 5.3 MB. 5.3 MB was still too bit, 
+so I went through the features from qfeatures.txt, 
+and did "-no-feature" for every single feature listed.  
+libQt5Core wouldn't compile without LIBRARY, 
+SETTINGS and REGULAREXPRESSION, 
+so I took the "-no-feature" out for those things.  
+Even with all of that removed, 
+libQt5Core.so.5.3.0 was still 4.3 MB after being stripped.  
+That would have some things removed though that we want.
+
+Is there any way to get Qt Core to compile smaller, 
+like under 3MB? 
+Am I missing anything to skip 
+or "-no-xyz" or "-nomake" or "-no-feature"?  
+Why is libQt5Core.so.5.3.0 so much bigger than libQtCore4.so.4.8.4?
+
+We may just need to move to 4.8.6 
+and leave it there instead of jumping onto 5.x.
+
+Thanks,
+-Daniel
+-------------- next part --------------
+An HTML attachment was scrubbed...

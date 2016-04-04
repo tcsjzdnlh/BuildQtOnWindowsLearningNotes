@@ -4,18 +4,51 @@
     <Filter Include="BuildQtOnWindows">
       <UniqueIdentifier>{52f1ddf0-e86c-4e97-b669-e7f26a8dbc66}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BuildQtOnWindows\SetupEnvironment">
+      <UniqueIdentifier>{0c46eabd-19c8-41fe-89db-9aabf806da77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildQtOnWindows\ConfigureQtBuildOption">
+      <UniqueIdentifier>{dd6a4840-0548-4654-9acb-bdd822cb7ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildQtOnWindows\BuildQtSteps">
+      <UniqueIdentifier>{05b0ec2a-e9e1-4573-b426-8673b3b50e5c}</UniqueIdentifier>
+    </Filter>
     <Filter Include="BuildQtOnWindows\BuildQtOfficialDocRef">
       <UniqueIdentifier>{7ee5914a-12d6-4082-add6-0843149fb4a4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>BuildQtOnWindows</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="README">
+    <None Include="Qt5.6vars.cmd">
+      <Filter>BuildQtOnWindows\SetupEnvironment</Filter>
+    </None>
+    <None Include="BuildQt_README">
       <Filter>BuildQtOnWindows\BuildQtOfficialDocRef</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Build_Qt_In_Minimal.txt">
+      <Filter>BuildQtOnWindows\BuildQtSteps</Filter>
+    </Text>
+    <Text Include="build_qt_on_windows.txt">
+      <Filter>BuildQtOnWindows\BuildQtSteps</Filter>
+    </Text>
+    <Text Include="Qt5_Build_steps.txt">
+      <Filter>BuildQtOnWindows\BuildQtSteps</Filter>
+    </Text>
+    <Text Include="Qt5.6_Build_Configuration.txt">
+      <Filter>BuildQtOnWindows\ConfigureQtBuildOption</Filter>
+    </Text>
+    <Text Include="Qt_Configure_Options.txt">
+      <Filter>BuildQtOnWindows\ConfigureQtBuildOption</Filter>
+    </Text>
+    <Text Include="Graphics_on_Windows_from_a_different_angle.txt">
+      <Filter>BuildQtOnWindows\BuildQtOfficialDocRef</Filter>
+    </Text>
+    <Text Include="Configure_Building_Qt_Ref.txt">
+      <Filter>BuildQtOnWindows\ConfigureQtBuildOption</Filter>
+    </Text>
+    <Text Include="Qt5_on_Windows_ANGLE_and_OpenGL.txt">
+      <Filter>BuildQtOnWindows\BuildQtOfficialDocRef</Filter>
+    </Text>
   </ItemGroup>
 </Project>

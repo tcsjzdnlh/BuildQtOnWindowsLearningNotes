@@ -146,10 +146,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <None Include="Qt5.6vars.cmd" />
+    <None Include="BuildQt_README" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="README" />
+    <Text Include="Build_Qt_In_Minimal.txt" />
+    <Text Include="build_qt_on_windows.txt" />
+    <Text Include="Configure_Building_Qt_Ref.txt" />
+    <Text Include="Graphics_on_Windows_from_a_different_angle.txt" />
+    <Text Include="Qt5.6_Build_Configuration.txt" />
+    <Text Include="Qt5_Build_steps.txt" />
+    <Text Include="Qt5_on_Windows_ANGLE_and_OpenGL.txt" />
+    <Text Include="Qt_Configure_Options.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
