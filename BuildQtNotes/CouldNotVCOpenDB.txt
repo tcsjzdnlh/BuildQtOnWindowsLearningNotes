@@ -7,6 +7,8 @@ until after the release of update 1.
 I solved it on my end 
 by adding the *.VC.opendb and *.VC.db files 
 to the .gitignore file of my project.
+ I added it right under the #User-specific files
+
 
 
 ## Ignore Visual Studio temporary files, build results, and
