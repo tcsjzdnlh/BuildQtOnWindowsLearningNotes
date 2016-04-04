@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="BuildQtOnWindows">
+      <UniqueIdentifier>{52f1ddf0-e86c-4e97-b669-e7f26a8dbc66}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>BuildQtOnWindows</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
