@@ -154,6 +154,7 @@
     <Text Include="Build_Qt_In_Minimal.txt" />
     <Text Include="build_qt_on_windows.txt" />
     <Text Include="Configure_Building_Qt_Ref.txt" />
+    <Text Include="CouldNotVCOpenDB.txt" />
     <Text Include="first_build_info.txt" />
     <Text Include="Graphics_on_Windows_from_a_different_angle.txt" />
     <Text Include="Qt5.6_Build_Configuration.txt" />
