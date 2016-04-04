@@ -27,7 +27,7 @@
     <None Include="Qt5.6_set_vars_and_build.cmd">
       <Filter>BuildQtOnWindows\SetupEnvironment</Filter>
     </None>
-    <None Include="configure_minimalbuildqt.cache">
+    <None Include="configure_minimalbuildqt_dotcache">
       <Filter>BuildQtOnWindows\ConfigureQtBuildOption</Filter>
     </None>
   </ItemGroup>
