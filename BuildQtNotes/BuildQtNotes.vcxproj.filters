@@ -18,11 +18,14 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Qt5.6vars.cmd">
-      <Filter>BuildQtOnWindows\SetupEnvironment</Filter>
-    </None>
     <None Include="BuildQt_README">
       <Filter>BuildQtOnWindows\BuildQtOfficialDocRef</Filter>
+    </None>
+    <None Include="configure_minimalbuildqt.cache">
+      <Filter>BuildQtOnWindows\ConfigureQtBuildOption</Filter>
+    </None>
+    <None Include="Qt5.6_set_vars_and_build.cmd">
+      <Filter>BuildQtOnWindows\SetupEnvironment</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +52,9 @@
     </Text>
     <Text Include="Qt5_on_Windows_ANGLE_and_OpenGL.txt">
       <Filter>BuildQtOnWindows\BuildQtOfficialDocRef</Filter>
+    </Text>
+    <Text Include="first_build_info.txt">
+      <Filter>BuildQtOnWindows\ConfigureQtBuildOption</Filter>
     </Text>
   </ItemGroup>
 </Project>
